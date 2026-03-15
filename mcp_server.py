@@ -59,4 +59,4 @@ def add_food_log(
 
 
 if __name__ == "__main__":
-    mcp.run(transport="sse", port=8000)
+    mcp.run(transport="sse", port=int(os.getenv("PORT", "8000")))
